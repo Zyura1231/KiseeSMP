@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiseeSMP - Server Minecraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0f7ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 122, 204, 0.2);
+            border-radius: 50%;
+            animation: moveBackground 5s infinite alternate ease-in-out;
+        }
+        body::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 122, 204, 0.2);
+            border-radius: 50%;
+            animation: moveBackground 5s infinite alternate-reverse ease-in-out;
+        }
+        @keyframes moveBackground {
+            from { transform: translateY(0); }
+            to { transform: translateY(20px); }
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #007acc;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar h2 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+        .hero {
+            background: #007acc;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #007acc;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #d0f0ff;
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+        .features {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+            flex: 1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 122, 204, 0.7);
+            color: white;
+            width: 100%;
+            position: relative;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>KiseeSMP</h2>
+    </nav><div class="hero">
+    <h1>Selamat Datang di KiseeSMP</h1>
+    <p>Bergabunglah dalam petualangan seru di server Minecraft KiseeSMP!</p>
+    <a class="btn" href="https://chat.whatsapp.com/JWtaBoSbadb84yXi7j0dJp" target="_blank">Bergabung dengan Grup WhatsApp</a>
+</div><div class="features">
+    <h2>Survival Economy yang seru dan menyenangkan</h2>
+      </div>
+      
+      <div style="flex-grow: 1;"></div>
